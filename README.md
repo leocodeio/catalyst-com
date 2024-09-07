@@ -1,13 +1,28 @@
-# Welcome to Remix!
+# welcome
 
-- 📖 [Remix docs](https://remix.run/docs)
-
-## Development
-
-Run the dev server:
+To run locally,
+npm run local
 
 ```shellscript
-npm run dev
+npm install -g pnpm
+pnpm i
+pnpm run local
+```
+
+# commands followed
+
+## Prisma
+
+```shellscript
+pnpm i prisma
+npx prisma init
+```
+
+write the prisma code...
+
+```shellscript
+npx prisma generate
+npx prisma db push
 ```
 
 ## Deployment
