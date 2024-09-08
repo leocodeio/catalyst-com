@@ -1,7 +1,7 @@
-import { Form } from "@remix-run/react";
+import { Form, Link } from "@remix-run/react";
 import { useState } from "react";
 
-const Login = ({ toggle }: { toggle: () => void }) => {
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -20,6 +20,7 @@ const Login = ({ toggle }: { toggle: () => void }) => {
             onChange={(e) => setEmail(e.target.value)}
             type="email"
             id="email"
+            name="email"
             placeholder="Your email"
             required
             className="w-full p-2 border border-gray-300 rounded mb-2"
@@ -35,26 +36,25 @@ const Login = ({ toggle }: { toggle: () => void }) => {
             onChange={(e) => setPassword(e.target.value)}
             type="current-password"
             id="password"
+            name="password"
             placeholder="Password"
             required
             className="w-full p-2 border border-gray-300 rounded mb-2"
           />
         </section>
-        <input type="hidden" name="form_type" value="login" />
         <button
           type="submit"
-          className="w-full p-2 bg-primary text-white rounded hover:border-2 transition duration-150"
+          className="w-full p-2 bg-primary text-black rounded hover:border-2 transition duration-150"
         >
           Login
         </button>
-        <input type="hidden" name="form_type" value="login" />
       </Form>
-      <button
-        onClick={toggle}
-        className="w-[250px] p-2 bg-primary text-white rounded hover:border-2 transition duration-150"
+      <Link
+        to={"/signup"}
+        className="w-[250px] text-center p-2 bg-primary text-black rounded hover:border-2 transition duration-150"
       >
         New? Create here
-      </button>
+      </Link>
     </div>
   );
 };

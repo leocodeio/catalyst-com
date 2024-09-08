@@ -31,6 +31,7 @@ export async function createUserSession(
   );
 
   session.set("id", userSession.data.id);
+  session.set("data", userSession.data);
   session.set("lightOrDarkMode", userSession.lightOrDarkMode);
   session.set("language", userSession.language);
   session.set("CSRFToken", userSession.CSRFToken);

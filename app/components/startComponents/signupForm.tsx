@@ -1,7 +1,7 @@
-import { Form } from "@remix-run/react";
+import { Form, Link } from "@remix-run/react";
 import { useState } from "react";
 
-const Signup = ({ toggle }: { toggle: () => void }) => {
+const Signup = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [name, setName] = useState("");
@@ -116,16 +116,15 @@ const Signup = ({ toggle }: { toggle: () => void }) => {
         <input name="email" value={email} hidden readOnly />
         <input name="phone" value={phone} hidden readOnly />
         <input name="password" value={password} hidden readOnly />
-        <input name="rePassword" value={rePassword} hidden readOnly />
-        <input type="hidden" name="form_type" value="signup" readOnly />
+        <input name="reenterPassword" value={rePassword} hidden readOnly />
       </Form>
 
-      <button
-        onClick={toggle}
-        className="w-[250px] p-2 bg-primary text-black rounded hover:border-2 transition duration-150"
+      <Link
+        to={"/login"}
+        className="w-[250px] text-center  p-2 bg-primary text-black rounded hover:border-2 transition duration-150"
       >
         Have an account? Log in here
-      </button>
+      </Link>
     </div>
   );
 };
