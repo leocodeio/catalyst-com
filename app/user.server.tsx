@@ -1,6 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 import crypto from "crypto";
-
+import uuid from "uuid4";
 // Initialize Prisma Client
 const prisma = new PrismaClient();
 
@@ -70,20 +70,27 @@ export async function registerUser({
   phone,
   password,
   reenterPassword,
-  catalystId,
 }: {
   name: string;
   email: string;
   phone: string;
   password: string;
   reenterPassword: string;
-  catalystId: string;
 }) {
   // Hash the password using crypto
   const hashedPassword = await hashPassword(password);
+
   if (password !== reenterPassword) {
     throw new Error("Passwords do not match");
   }
+  const catalystId = uuid();
+  // console.log({
+  //   catalystId,
+  //   name,
+  //   email,
+  //   phone,
+  //   password: hashedPassword,
+  // });
   // Create a new user in the database
   const user = await prisma.user.create({
     data: {
@@ -94,8 +101,7 @@ export async function registerUser({
       password: hashedPassword,
     },
   });
-
-  return user;
+  return { status: true };
 }
 
 // Function to find a user by email
@@ -129,7 +135,7 @@ export async function loginUser({
     throw new Error("Invalid password");
   }
 
-  return user;
+  return { user: user, status: true };
 }
 
 // Optional: Function to fetch user by ID (for session management)
