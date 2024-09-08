@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Signup from "../components/startComponents/signupForm";
 import { ActionFunction, LoaderFunction, redirect } from "@remix-run/node";
 import { commitSession, getSession } from "~/session.server";

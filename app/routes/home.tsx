@@ -1,35 +1,29 @@
 // import Welcome from "./components/homeComponents/Welcome";
-// import Header from "./components/common/Header";
+import Header from "../components/common/Header";
+import Welcome from "../components/homeComponents/Welcome";
 
-import { LoaderFunction, redirect } from "@remix-run/node";
-import { getSession } from "~/session.server";
-import { useLoaderData } from "@remix-run/react";
-import { UserData } from "../model/user-data";
+import { commitSession, getSession } from "~/session.server";
+import { LoaderFunction } from "@remix-run/node";
+
 export const loader: LoaderFunction = async ({ request }) => {
   const session = await getSession(request.headers.get("Cookie"));
-  if (!session.get("id")) {
-    return redirect("/login");
-  } else {
-    const user = session.get("data");
-    return user;
-  }
+  return session.get("data");
 };
 
 const Home = () => {
-  const user = useLoaderData<UserData>();
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       {/* <h1>{user.id}</h1> */}
       <div
-        className="h-screen w-screen"
+        className="h-screen w-screen flex items-center justify-center"
         style={{
           backgroundImage: "url('./images/catalyst-home.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        {/* <Welcome /> */}
+        <Welcome />
       </div>
     </>
   );

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Login from "../components/startComponents/loginForm";
-import { ActionFunction, LoaderFunction, redirect } from "@remix-run/node";
+import { ActionFunction, LoaderFunction } from "@remix-run/node";
 import { commitSession, createUserSession, getSession } from "~/session.server";
 import { loginUser } from "../user.server";
 export const loader: LoaderFunction = async ({ request }) => {
