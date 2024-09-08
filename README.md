@@ -25,6 +25,15 @@ npx prisma generate
 npx prisma db push
 ```
 
+## vercel
+
+```shellscript
+pnpm i @vercel/remix
+```
+
+edit vite config
+https://vercel.com/docs/frameworks/remix#vercel-vite-preset
+
 ## Deployment
 
 First, build your app for production:
