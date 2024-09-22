@@ -5,14 +5,7 @@ import { commitSession, getSession } from "~/session.server";
 import { registerUser } from "~/user.server";
 
 export const loader: LoaderFunction = async ({ request }) => {
-  const session = await getSession(request.headers.get("Cookie"));
-  session.set("id", null);
-  session.set("data", { id: "" });
-  return new Response(null, {
-    headers: {
-      "Set-Cookie": await commitSession(session),
-    },
-  });
+  return null;
 };
 
 export const action: ActionFunction = async ({ request }) => {
