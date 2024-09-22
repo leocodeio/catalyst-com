@@ -2,7 +2,7 @@
 import Header from "../components/common/Header";
 import Welcome from "../components/homeComponents/Welcome";
 
-import { commitSession, getSession } from "~/session.server";
+import { getSession } from "~/session.server";
 import { LoaderFunction } from "@remix-run/node";
 
 export const loader: LoaderFunction = async ({ request }) => {

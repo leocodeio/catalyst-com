@@ -4,14 +4,7 @@ import { ActionFunction, LoaderFunction } from "@remix-run/node";
 import { commitSession, createUserSession, getSession } from "~/session.server";
 import { loginUser } from "../user.server";
 export const loader: LoaderFunction = async ({ request }) => {
-  const session = await getSession(request.headers.get("Cookie"));
-  session.set("id", null);
-  session.set("data", { id: "" });
-  return new Response(null, {
-    headers: {
-      "Set-Cookie": await commitSession(session),
-    },
-  });
+  return null;
 };
 
 export const action: ActionFunction = async ({ request }) => {
@@ -52,7 +45,7 @@ export const action: ActionFunction = async ({ request }) => {
             loginCount: 0,
           },
         },
-        "/home",
+        "/home"
       );
     }
   } catch (err) {
