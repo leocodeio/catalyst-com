@@ -7,10 +7,6 @@ import { LoaderFunction } from "@remix-run/node";
 
 export const loader: LoaderFunction = async ({ request }) => {
   const session = await getSession(request.headers.get("Cookie"));
-  // console.log(session.get("data"));
-  if (session.get("id") === "") {
-    return null;
-  }
   return session.get("data");
 };
 
