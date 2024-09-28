@@ -3,9 +3,15 @@ import { UserData } from "../../model/user-data";
 
 const Welcome = () => {
   const user = useLoaderData<UserData>();
+  // console.log(user);
   return (
     <div className="bg-black bg-opacity-45 text-primary flex flex-col items-center justify-center text-center p-4 rounded-lg">
-      <h1 className="text-2xl mb-4">Welcome to Catalyst - {user.name}</h1>
+      {user.id !== "" ? (
+        <h1 className="text-2xl mb-4">Welcome to Catalyst - {user.name}</h1>
+      ) : (
+        <h1 className="text-2xl mb-4">Welcome to Catalyst </h1>
+      )}
+
       <h2 className="mb-4">
         Reach out to us at <br />
         <a href="https://www.linkedin.com/in/sai-harsha-vardhan-pittada-8a9a74252/">
