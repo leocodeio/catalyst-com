@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/leocodeio/catalyst-com/compare/v1.0.0...v1.0.1) (2025-09-07)
+
+
+### Performance Improvements
+
+* **Updated full code:** Updated full code ([fb74c49](https://github.com/leocodeio/catalyst-com/commit/fb74c4924d5c1084427c55e2d74fae06f9313be0))
+
 # 1.0.0 (2025-09-07)
 
 
