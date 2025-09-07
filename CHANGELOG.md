@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/leocodeio/catalyst-com/compare/v1.0.2...v1.0.3) (2025-09-07)
+
+
+### Performance Improvements
+
+* **db updated:** db updated ([35637b3](https://github.com/leocodeio/catalyst-com/commit/35637b37dba675fed339d20c932bb4e96457d767))
+
 ## [1.0.2](https://github.com/leocodeio/catalyst-com/compare/v1.0.1...v1.0.2) (2025-09-07)
 
 
