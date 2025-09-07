@@ -279,9 +279,9 @@
     }
   },
   "remixConfig": {
-    "appDirectory": "/home/leo/Desktop/leo-ext/self/production/catalyst/app",
+    "appDirectory": "/media/leo/leostore/leostore/leo-ext/self/production/catalyst/catalyst-com/app",
     "basename": "/",
-    "buildDirectory": "/home/leo/Desktop/leo-ext/self/production/catalyst/build",
+    "buildDirectory": "/media/leo/leostore/leostore/leo-ext/self/production/catalyst/catalyst-com/build",
     "future": {
       "v3_fetcherPersist": true,
       "v3_relativeSplatPath": true,
