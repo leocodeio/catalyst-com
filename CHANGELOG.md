@@ -1,3 +1,10 @@
+# 1.0.0 (2025-09-07)
+
+
+### Performance Improvements
+
+* **updated codeabse overall:** updated codeabse overall ([701b54a](https://github.com/leocodeio/catalyst-com/commit/701b54a3ef797eb1557c8f6cba852e4cfa86f2a3))
+
 ## [1.12.2](https://github.com/leocodeio/catalyst/compare/v1.12.1...v1.12.2) (2025-06-17)
 
 ### Performance Improvements

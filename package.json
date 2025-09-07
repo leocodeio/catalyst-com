@@ -103,5 +103,5 @@
       "path": "@commitlint/cz-commitlint"
     }
   },
-  "version": "1.12.2"
+  "version": "1.0.0"
 }
