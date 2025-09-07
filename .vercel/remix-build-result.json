@@ -1,0 +1,474 @@
+{
+  "buildManifest": {
+    "serverBundles": {
+      "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0": {
+        "id": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+        "file": "build/server/nodejs-eyJydW50aW1lIjoibm9kZWpzIn0/index.js",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    },
+    "routeIdToServerBundleId": {
+      "routes/_index": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/$": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/action+/set-language": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/action+/set-theme-color": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/action+/set-theme": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api+/auth.$": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api+/payments+/success": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/api+/payments+/webhook": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/auth+/$": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/auth+/_index": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/auth+/logout": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/auth+/signin": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/auth+/signup": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/feature+/_index": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/feature+/dashboard+/_index": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/feature+/home+/_index": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/feature+/home+/profile": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/loader+/auth+/signin": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/loader+/auth+/signup": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/loader+/feature+/dashboard+/dashboard.loader": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/loader+/feature+/feature.loader": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/loader+/feature+/home+/home.loader": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/loader+/landing.loader": "nodejs-eyJydW50aW1lIjoibm9kZWpzIn0"
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "app/root.tsx",
+        "config": {}
+      },
+      "routes/_index": {
+        "index": true,
+        "id": "routes/_index",
+        "parentId": "root",
+        "file": "app/routes/_index.tsx",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/$": {
+        "path": "*",
+        "id": "routes/$",
+        "parentId": "root",
+        "file": "app/routes/$.tsx",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/action+/set-language": {
+        "path": "action/set-language",
+        "id": "routes/action+/set-language",
+        "parentId": "root",
+        "file": "app/routes/action+/set-language.ts",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/action+/set-theme-color": {
+        "path": "action/set-theme-color",
+        "id": "routes/action+/set-theme-color",
+        "parentId": "root",
+        "file": "app/routes/action+/set-theme-color.ts",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/action+/set-theme": {
+        "path": "action/set-theme",
+        "id": "routes/action+/set-theme",
+        "parentId": "root",
+        "file": "app/routes/action+/set-theme.ts",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api+/auth.$": {
+        "path": "api/auth/*",
+        "id": "routes/api+/auth.$",
+        "parentId": "root",
+        "file": "app/routes/api+/auth.$.ts",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api+/payments+/success": {
+        "path": "api/payments/success",
+        "id": "routes/api+/payments+/success",
+        "parentId": "root",
+        "file": "app/routes/api+/payments+/success.ts",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/api+/payments+/webhook": {
+        "path": "api/payments/webhook",
+        "id": "routes/api+/payments+/webhook",
+        "parentId": "root",
+        "file": "app/routes/api+/payments+/webhook.ts",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/auth+/_layout": {
+        "path": "auth",
+        "id": "routes/auth+/_layout",
+        "parentId": "root",
+        "file": "app/routes/auth+/_layout.tsx",
+        "config": {}
+      },
+      "routes/auth+/$": {
+        "path": "*",
+        "id": "routes/auth+/$",
+        "parentId": "routes/auth+/_layout",
+        "file": "app/routes/auth+/$.tsx",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/auth+/_index": {
+        "index": true,
+        "id": "routes/auth+/_index",
+        "parentId": "routes/auth+/_layout",
+        "file": "app/routes/auth+/_index.tsx",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/auth+/logout": {
+        "path": "logout",
+        "id": "routes/auth+/logout",
+        "parentId": "routes/auth+/_layout",
+        "file": "app/routes/auth+/logout.tsx",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/auth+/signin": {
+        "path": "signin",
+        "id": "routes/auth+/signin",
+        "parentId": "routes/auth+/_layout",
+        "file": "app/routes/auth+/signin.tsx",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/auth+/signup": {
+        "path": "signup",
+        "id": "routes/auth+/signup",
+        "parentId": "routes/auth+/_layout",
+        "file": "app/routes/auth+/signup.tsx",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/feature+/_layout": {
+        "path": "feature",
+        "id": "routes/feature+/_layout",
+        "parentId": "root",
+        "file": "app/routes/feature+/_layout.tsx",
+        "config": {}
+      },
+      "routes/feature+/_index": {
+        "index": true,
+        "id": "routes/feature+/_index",
+        "parentId": "routes/feature+/_layout",
+        "file": "app/routes/feature+/_index.tsx",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/feature+/dashboard+/_layout": {
+        "path": "dashboard",
+        "id": "routes/feature+/dashboard+/_layout",
+        "parentId": "routes/feature+/_layout",
+        "file": "app/routes/feature+/dashboard+/_layout.tsx",
+        "config": {}
+      },
+      "routes/feature+/dashboard+/_index": {
+        "index": true,
+        "id": "routes/feature+/dashboard+/_index",
+        "parentId": "routes/feature+/dashboard+/_layout",
+        "file": "app/routes/feature+/dashboard+/_index.tsx",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/feature+/home+/_layout": {
+        "path": "home",
+        "id": "routes/feature+/home+/_layout",
+        "parentId": "routes/feature+/_layout",
+        "file": "app/routes/feature+/home+/_layout.tsx",
+        "config": {}
+      },
+      "routes/feature+/home+/_index": {
+        "index": true,
+        "id": "routes/feature+/home+/_index",
+        "parentId": "routes/feature+/home+/_layout",
+        "file": "app/routes/feature+/home+/_index.tsx",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/feature+/home+/profile": {
+        "path": "profile",
+        "id": "routes/feature+/home+/profile",
+        "parentId": "routes/feature+/home+/_layout",
+        "file": "app/routes/feature+/home+/profile.tsx",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/loader+/auth+/signin": {
+        "path": "loader/auth/signin",
+        "id": "routes/loader+/auth+/signin",
+        "parentId": "root",
+        "file": "app/routes/loader+/auth+/signin.ts",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/loader+/auth+/signup": {
+        "path": "loader/auth/signup",
+        "id": "routes/loader+/auth+/signup",
+        "parentId": "root",
+        "file": "app/routes/loader+/auth+/signup.ts",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/loader+/feature+/dashboard+/dashboard.loader": {
+        "path": "loader/feature/dashboard/dashboard/loader",
+        "id": "routes/loader+/feature+/dashboard+/dashboard.loader",
+        "parentId": "root",
+        "file": "app/routes/loader+/feature+/dashboard+/dashboard.loader.ts",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/loader+/feature+/feature.loader": {
+        "path": "loader/feature/feature/loader",
+        "id": "routes/loader+/feature+/feature.loader",
+        "parentId": "root",
+        "file": "app/routes/loader+/feature+/feature.loader.ts",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/loader+/feature+/home+/home.loader": {
+        "path": "loader/feature/home/home/loader",
+        "id": "routes/loader+/feature+/home+/home.loader",
+        "parentId": "root",
+        "file": "app/routes/loader+/feature+/home+/home.loader.ts",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/loader+/landing.loader": {
+        "path": "loader/landing/loader",
+        "id": "routes/loader+/landing.loader",
+        "parentId": "root",
+        "file": "app/routes/loader+/landing.loader.ts",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    }
+  },
+  "remixConfig": {
+    "appDirectory": "/home/leo/Desktop/leo-ext/self/production/catalyst/app",
+    "basename": "/",
+    "buildDirectory": "/home/leo/Desktop/leo-ext/self/production/catalyst/build",
+    "future": {
+      "v3_fetcherPersist": true,
+      "v3_relativeSplatPath": true,
+      "v3_throwAbortReason": true,
+      "v3_routeConfig": false,
+      "v3_singleFetch": true,
+      "v3_lazyRouteDiscovery": true,
+      "unstable_optimizeDeps": false
+    },
+    "manifest": false,
+    "publicPath": "/",
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "root.tsx"
+      },
+      "routes/_index": {
+        "index": true,
+        "id": "routes/_index",
+        "parentId": "root",
+        "file": "routes/_index.tsx"
+      },
+      "routes/$": {
+        "path": "*",
+        "id": "routes/$",
+        "parentId": "root",
+        "file": "routes/$.tsx"
+      },
+      "routes/action+/set-language": {
+        "path": "action/set-language",
+        "id": "routes/action+/set-language",
+        "parentId": "root",
+        "file": "routes/action+/set-language.ts"
+      },
+      "routes/action+/set-theme-color": {
+        "path": "action/set-theme-color",
+        "id": "routes/action+/set-theme-color",
+        "parentId": "root",
+        "file": "routes/action+/set-theme-color.ts"
+      },
+      "routes/action+/set-theme": {
+        "path": "action/set-theme",
+        "id": "routes/action+/set-theme",
+        "parentId": "root",
+        "file": "routes/action+/set-theme.ts"
+      },
+      "routes/api+/auth.$": {
+        "path": "api/auth/*",
+        "id": "routes/api+/auth.$",
+        "parentId": "root",
+        "file": "routes/api+/auth.$.ts"
+      },
+      "routes/api+/payments+/success": {
+        "path": "api/payments/success",
+        "id": "routes/api+/payments+/success",
+        "parentId": "root",
+        "file": "routes/api+/payments+/success.ts"
+      },
+      "routes/api+/payments+/webhook": {
+        "path": "api/payments/webhook",
+        "id": "routes/api+/payments+/webhook",
+        "parentId": "root",
+        "file": "routes/api+/payments+/webhook.ts"
+      },
+      "routes/auth+/_layout": {
+        "path": "auth",
+        "id": "routes/auth+/_layout",
+        "parentId": "root",
+        "file": "routes/auth+/_layout.tsx"
+      },
+      "routes/auth+/$": {
+        "path": "*",
+        "id": "routes/auth+/$",
+        "parentId": "routes/auth+/_layout",
+        "file": "routes/auth+/$.tsx"
+      },
+      "routes/auth+/_index": {
+        "index": true,
+        "id": "routes/auth+/_index",
+        "parentId": "routes/auth+/_layout",
+        "file": "routes/auth+/_index.tsx"
+      },
+      "routes/auth+/logout": {
+        "path": "logout",
+        "id": "routes/auth+/logout",
+        "parentId": "routes/auth+/_layout",
+        "file": "routes/auth+/logout.tsx"
+      },
+      "routes/auth+/signin": {
+        "path": "signin",
+        "id": "routes/auth+/signin",
+        "parentId": "routes/auth+/_layout",
+        "file": "routes/auth+/signin.tsx"
+      },
+      "routes/auth+/signup": {
+        "path": "signup",
+        "id": "routes/auth+/signup",
+        "parentId": "routes/auth+/_layout",
+        "file": "routes/auth+/signup.tsx"
+      },
+      "routes/feature+/_layout": {
+        "path": "feature",
+        "id": "routes/feature+/_layout",
+        "parentId": "root",
+        "file": "routes/feature+/_layout.tsx"
+      },
+      "routes/feature+/_index": {
+        "index": true,
+        "id": "routes/feature+/_index",
+        "parentId": "routes/feature+/_layout",
+        "file": "routes/feature+/_index.tsx"
+      },
+      "routes/feature+/dashboard+/_layout": {
+        "path": "dashboard",
+        "id": "routes/feature+/dashboard+/_layout",
+        "parentId": "routes/feature+/_layout",
+        "file": "routes/feature+/dashboard+/_layout.tsx"
+      },
+      "routes/feature+/dashboard+/_index": {
+        "index": true,
+        "id": "routes/feature+/dashboard+/_index",
+        "parentId": "routes/feature+/dashboard+/_layout",
+        "file": "routes/feature+/dashboard+/_index.tsx"
+      },
+      "routes/feature+/home+/_layout": {
+        "path": "home",
+        "id": "routes/feature+/home+/_layout",
+        "parentId": "routes/feature+/_layout",
+        "file": "routes/feature+/home+/_layout.tsx"
+      },
+      "routes/feature+/home+/_index": {
+        "index": true,
+        "id": "routes/feature+/home+/_index",
+        "parentId": "routes/feature+/home+/_layout",
+        "file": "routes/feature+/home+/_index.tsx"
+      },
+      "routes/feature+/home+/profile": {
+        "path": "profile",
+        "id": "routes/feature+/home+/profile",
+        "parentId": "routes/feature+/home+/_layout",
+        "file": "routes/feature+/home+/profile.tsx"
+      },
+      "routes/loader+/auth+/signin": {
+        "path": "loader/auth/signin",
+        "id": "routes/loader+/auth+/signin",
+        "parentId": "root",
+        "file": "routes/loader+/auth+/signin.ts"
+      },
+      "routes/loader+/auth+/signup": {
+        "path": "loader/auth/signup",
+        "id": "routes/loader+/auth+/signup",
+        "parentId": "root",
+        "file": "routes/loader+/auth+/signup.ts"
+      },
+      "routes/loader+/feature+/dashboard+/dashboard.loader": {
+        "path": "loader/feature/dashboard/dashboard/loader",
+        "id": "routes/loader+/feature+/dashboard+/dashboard.loader",
+        "parentId": "root",
+        "file": "routes/loader+/feature+/dashboard+/dashboard.loader.ts"
+      },
+      "routes/loader+/feature+/feature.loader": {
+        "path": "loader/feature/feature/loader",
+        "id": "routes/loader+/feature+/feature.loader",
+        "parentId": "root",
+        "file": "routes/loader+/feature+/feature.loader.ts"
+      },
+      "routes/loader+/feature+/home+/home.loader": {
+        "path": "loader/feature/home/home/loader",
+        "id": "routes/loader+/feature+/home+/home.loader",
+        "parentId": "root",
+        "file": "routes/loader+/feature+/home+/home.loader.ts"
+      },
+      "routes/loader+/landing.loader": {
+        "path": "loader/landing/loader",
+        "id": "routes/loader+/landing.loader",
+        "parentId": "root",
+        "file": "routes/loader+/landing.loader.ts"
+      }
+    },
+    "serverBuildFile": "index.js",
+    "serverModuleFormat": "esm",
+    "ssr": true
+  },
+  "viteConfig": {
+    "build": {
+      "assetsDir": "assets"
+    }
+  }
+}

@@ -1,0 +1,325 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-blue: #005481;
+    --light-blue: #66A1D2;
+    --accent-blue: #4A90E2;
+    --text: white;
+    --sec-text: #333333;
+    --highlights: #FFD700;
+}
+body {
+    background-color: rgb(255, 249, 238);
+}
+
+header {
+    background-color: var(--text);
+    height: 120px;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    margin: 12.5px;
+}
+
+h1 {
+    color: var(--primary-blue);
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+    color: black;
+}
+
+.introbg {
+    margin: 0;
+    width: 100vw;
+    background-image: url("https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?cs=srgb&dl=pexels-francesco-ungaro-281260.jpg&fm=jpg");
+    overflow: hidden;
+    background-size: cover;
+}
+
+.intro {
+
+    padding: 40px;
+    padding-left: 180px;
+    height: 400px;
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+
+.intro .contactButtons {
+    display: flex;
+    margin-left: 40px;
+    gap: 30px;
+    text-decoration: none;
+}
+
+.intro .contactButtons a {
+    background-color: #fff;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 7px;
+    color: rgb(0, 0, 0);
+}
+
+.intro h1 {
+    color: var(--primary-blue);
+    font-size: 30px;
+    max-width: 380px;
+}
+
+.intro h2 {
+    max-width: 500px;
+}
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutUs h1 {
+    margin-top: 40px;
+}
+
+
+.aboutUs .profile {
+    height: 300px;
+    width: 300px;
+    margin: 40px;
+}
+
+.aboutUs .sign {
+    height: 100px;
+    width: 300px;
+    margin: 40px;
+}
+
+.aboutUs h2 {
+    max-width: 750px;
+    text-align: left;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color:#92C2FF;
+    padding: 25px;
+    padding-bottom: 40px;
+}
+
+.services h1 {
+    margin-top: 40px;
+}
+
+.services h3 {
+    max-width: 750px;
+    margin-top: 20px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+
+
+.services .cards .card{
+    display: flex;
+    margin: 10px;
+}
+.services .cards .card .box{  
+    background-color: black;
+    height:200px;
+    width: 160px;
+    margin: 10px;
+}
+
+.sucess{
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sucess .cont{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sucess .cont h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+.sucess .cont h2 {
+    margin-top: 20px;
+    text-align: center;
+    margin: 20px;
+
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color:#92C2FF;
+    padding:20px;
+    padding-bottom: 30px;
+}
+
+.faq h1 {
+    margin-top: 40px;
+}
+
+.faq h3 {
+    max-width: 750px;
+    margin-top: 20px;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.faq .questcard{
+    height:35px;
+    width:70%;
+    background-color: black;
+    margin: 10px;
+}
+
+.contact{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    border-radius: 15px;
+    padding: 20px;
+}
+.contact h1{
+    margin-top: 20px;
+}
+
+.contact .details{
+    display: flex;
+    flex-direction: column;
+
+    margin: 30px;
+    padding: 20px;
+}
+
+.contact .details label{
+    font-size: 20px;
+    font-weight: 450;
+}
+
+.contact button{
+    height: 35px;
+    width: 70px;
+    border-radius: 13px;
+
+}
+
+footer {
+    background-color:#92C2FF;
+    height: 120px;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        color: var(--primary-blue);
+        font-size: larger;
+    }
+
+    h2 {
+        color: black;
+        font-size: 18px;
+    }
+
+    h3 {
+        color: black;
+        font-size: 18px;
+    }
+
+    header nav a {
+        visibility: hidden;
+    }
+
+    header {
+        display: flex;
+        padding-left: 20px;
+        padding-top: 15px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .intro {
+        padding-left: 40px;
+    }
+
+    .aboutUs h2 {
+        max-width: 500px;
+        margin-left: 40px;
+        text-align: left;
+        font-size: large;
+    }
+
+    .services h3 {
+        max-width: 500px;
+        margin-left: 40px;
+        text-align: left;
+        font-size: large;
+    }
+
+    .sucess .cont h1 {
+        margin-top: 20px;
+        text-align: center;
+        
+    }
+    .sucess .cont h2 {
+        margin-top: 20px;
+        text-align: center;
+        font-size: small;
+        margin: 20px;
+    }
+
+    .faq h3 {
+        max-width: 500px;
+        margin-left: 40px;
+        text-align: left;
+        font-size: large;
+    }
+
+}
