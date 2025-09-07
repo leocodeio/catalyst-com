@@ -37,10 +37,10 @@ export function LandingHero({ user }: LandingHeroProps) {
           <div className="mb-8 animate-fade-in-up" style={{ animationDelay: '100ms' }}>
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
-                Catalyst
+                Learn
               </span>{" "}
-              <strong>community</strong> <span>&</span> <br />
-              <strong>connect</strong> <em className="italic">together</em>
+              <strong>together</strong> <span>&</span> <br />
+              <strong>grow</strong> <em className="italic">faster</em>
             </h1>
           </div>
 
@@ -49,8 +49,8 @@ export function LandingHero({ user }: LandingHeroProps) {
             className="mx-auto mb-12 max-w-2xl text-lg text-muted-foreground animate-fade-in-up"
             style={{ animationDelay: '200ms' }}
           >
-            Join the Catalyst community of innovators, creators, and dreamers. 
-            Share ideas, build connections, and accelerate your journey together.
+            Join a community of students and developers where learning meets mentorship. 
+            Get personalized guidance, collaborate on projects, and accelerate your coding journey.
           </p>
 
           <div
@@ -112,30 +112,30 @@ export function LandingHero({ user }: LandingHeroProps) {
           style={{ animationDelay: '400ms' }}
         >
           <div className="text-center">
-            <p className="text-sm text-muted-foreground mb-6">Trusted by developers and creators worldwide</p>
+            <p className="text-sm text-muted-foreground mb-6">Join hundreds of students already learning together</p>
             <div className="flex items-center justify-center gap-8">
-              {/* Community Icons */}
+              {/* Learning Icons */}
               <div className="opacity-60 grayscale hover:opacity-100 hover:grayscale-0 hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.3)] transition-all duration-300">
                 <div className="h-8 w-8 rounded-full bg-blue-600/20 flex items-center justify-center">
-                  <span className="text-sm">🚀</span>
+                  <span className="text-sm">📚</span>
                 </div>
               </div>
 
               <div className="opacity-60 grayscale hover:opacity-100 hover:grayscale-0 hover:drop-shadow-[0_0_8px_rgba(56,189,248,0.5)] transition-all duration-300">
                 <div className="h-8 w-8 rounded-full bg-green-600/20 flex items-center justify-center">
-                  <span className="text-sm">🌟</span>
+                  <span className="text-sm">🎓</span>
                 </div>
               </div>
 
               <div className="opacity-60 grayscale hover:opacity-100 hover:grayscale-0 hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.3)] transition-all duration-300">
                 <div className="h-8 w-8 rounded-full bg-purple-600/20 flex items-center justify-center">
-                  <span className="text-sm">💡</span>
+                  <span className="text-sm">🧑‍🏫</span>
                 </div>
               </div>
 
               <div className="opacity-60 grayscale hover:opacity-100 hover:grayscale-0 hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.3)] transition-all duration-300">
                 <div className="h-8 w-8 rounded-full bg-orange-600/20 flex items-center justify-center">
-                  <span className="text-sm">🎯</span>
+                  <span className="text-sm">💻</span>
                 </div>
               </div>
             </div>

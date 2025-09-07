@@ -8,31 +8,31 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Catalyst - Welcome to Our Community" },
+    { title: "Catalyst - Learning Community & Mentorship Platform" },
     {
       name: "description",
       content:
-        "Join the Catalyst community - a place where innovation meets collaboration. Connect with like-minded individuals and grow together.",
+        "Join the Catalyst learning community - where students connect with mentors for personalized guidance. Learn coding together, get mentorship from Leo, and accelerate your development journey.",
     },
     {
       name: "keywords",
-      content: "community, collaboration, innovation, networking, growth",
+      content: "mentorship, coding, learning, students, community, programming, development, Leo, portfolio",
     },
-    { property: "og:title", content: "Catalyst - Community Platform" },
+    { property: "og:title", content: "Catalyst - Learning Community & Mentorship" },
     {
       property: "og:description",
       content:
-        "Welcome to the Catalyst community - where connections drive innovation.",
+        "Connect with mentors and fellow students in our learning community. Get personalized guidance and accelerate your coding journey.",
     },
     { property: "og:type", content: "website" },
     { name: "twitter:card", content: "summary_large_image" },
-    { name: "twitter:title", content: "Catalyst - Community Platform" },
+    { name: "twitter:title", content: "Catalyst - Learning Community & Mentorship" },
     {
       name: "twitter:description",
-      content: "Join our community of innovators and creators.",
+      content: "Join our community of learners and get mentorship for your coding journey.",
     },
     { name: "robots", content: "index, follow" },
-    { name: "author", content: "Catalyst Community" },
+    { name: "author", content: "Catalyst Learning Community" },
     { name: "viewport", content: "width=device-width, initial-scale=1" },
   ];
 };
@@ -276,42 +276,97 @@ export default function Landing() {
 
       {/* Community Section */}
       <div id="community" className="relative py-24 px-4">
-        <div className="container mx-auto max-w-4xl text-center">
+        <div className="container mx-auto max-w-6xl text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-8">
-            Welcome to Our Community
+            Join Our Learning Community
           </h2>
-          <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Connect with like-minded individuals, share ideas, and grow
-            together. Our community is a place where innovation meets
-            collaboration.
+          <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
+            Connect with fellow students, share knowledge, and grow together. 
+            Our community is designed for collaborative learning, mentorship, 
+            and building the next generation of developers.
           </p>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="p-6 rounded-2xl bg-card border border-border">
               <div className="w-12 h-12 rounded-full bg-blue-600/20 flex items-center justify-center mb-4 mx-auto">
-                <span className="text-2xl">🤝</span>
+                <span className="text-2xl">🎓</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">Connect</h3>
+              <h3 className="text-lg font-semibold mb-2">Learn Together</h3>
               <p className="text-muted-foreground text-sm">
-                Build meaningful relationships with peers and mentors
+                Study groups, code reviews, and collaborative learning sessions with peers
               </p>
             </div>
             <div className="p-6 rounded-2xl bg-card border border-border">
               <div className="w-12 h-12 rounded-full bg-green-600/20 flex items-center justify-center mb-4 mx-auto">
-                <span className="text-2xl">💡</span>
+                <span className="text-2xl">🧑‍🏫</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">Innovate</h3>
+              <h3 className="text-lg font-semibold mb-2">Get Mentored</h3>
               <p className="text-muted-foreground text-sm">
-                Share ideas and collaborate on exciting projects
+                Connect with experienced developers for guidance and career advice
               </p>
             </div>
             <div className="p-6 rounded-2xl bg-card border border-border">
               <div className="w-12 h-12 rounded-full bg-purple-600/20 flex items-center justify-center mb-4 mx-auto">
                 <span className="text-2xl">🚀</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">Grow</h3>
+              <h3 className="text-lg font-semibold mb-2">Build Projects</h3>
               <p className="text-muted-foreground text-sm">
-                Learn from others and accelerate your personal growth
+                Collaborate on real-world projects and build your portfolio together
               </p>
+            </div>
+          </div>
+
+          {/* Featured Mentor Section */}
+          <div className="bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-3xl p-8 border border-blue-600/20">
+            <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="text-center md:text-left flex-1">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-600/20 text-blue-400 text-sm font-medium mb-4">
+                  <span className="text-lg">⭐</span>
+                  Featured Mentor
+                </div>
+                <h3 className="text-2xl font-bold text-foreground mb-3">
+                  Learn from Leo
+                </h3>
+                <p className="text-muted-foreground mb-6 max-w-md">
+                  Get personalized mentorship from an experienced developer. 
+                  Join study groups, receive code reviews, and accelerate your learning journey.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                  <a
+                    href="https://portfolio.leocode.tech/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors"
+                  >
+                    View Portfolio
+                    <ArrowRightIcon className="w-4 h-4" />
+                  </a>
+                  <button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const element = document.getElementById("contact");
+                      if (element) {
+                        const headerOffset = 120;
+                        const elementPosition =
+                          element.getBoundingClientRect().top + window.pageYOffset;
+                        const offsetPosition = elementPosition - headerOffset;
+                        window.scrollTo({
+                          top: offsetPosition,
+                          behavior: "smooth",
+                        });
+                      }
+                    }}
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border bg-card text-foreground font-medium hover:bg-accent transition-colors"
+                  >
+                    Get Mentorship
+                    <ArrowRightIcon className="w-4 h-4" />
+                  </button>
+                </div>
+              </div>
+              <div className="flex-shrink-0">
+                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center text-white font-bold text-2xl">
+                  L
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -319,53 +374,104 @@ export default function Landing() {
 
       {/* Contact Section */}
       <div id="contact" className="relative py-24 px-4 bg-card/20">
-        <div className="container mx-auto max-w-2xl text-center">
+        <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-8">
-            Get in Touch
+            Get Mentorship & Join Our Community
           </h2>
           <p className="text-lg text-muted-foreground mb-12">
-            Have questions or want to learn more? We'd love to hear from you.
+            Ready to accelerate your learning? Connect with Leo for personalized mentorship 
+            or join our student community for collaborative learning.
           </p>
-          <div className="grid gap-6">
+          
+          {/* Leo's Contact Card */}
+          <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-3xl p-8 border border-blue-600/30 mb-12">
+            <div className="flex flex-col items-center text-center mb-8">
+              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center text-white font-bold text-3xl mb-4">
+                L
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-2">Leo - Your Mentor</h3>
+              <p className="text-muted-foreground max-w-2xl">
+                Experienced developer offering personalized mentorship, code reviews, and career guidance. 
+                Visit my portfolio to see my work and reach out for collaboration opportunities.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="flex items-center justify-center space-x-4 p-6 rounded-2xl bg-card/50 border border-border/50">
+                <div className="w-12 h-12 rounded-full bg-blue-600/20 flex items-center justify-center">
+                  <span className="text-xl">🌐</span>
+                </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-foreground">Portfolio</h4>
+                  <a
+                    href="https://portfolio.leocode.tech/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-300 transition-colors text-sm"
+                  >
+                    portfolio.leocode.tech
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-center justify-center space-x-4 p-6 rounded-2xl bg-card/50 border border-border/50">
+                <div className="w-12 h-12 rounded-full bg-green-600/20 flex items-center justify-center">
+                  <span className="text-xl">📧</span>
+                </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-foreground">Email</h4>
+                  <a
+                    href="mailto:leo@leocode.tech"
+                    className="text-green-400 hover:text-green-300 transition-colors text-sm"
+                  >
+                    leo@leocode.tech
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Community Contacts */}
+          <h3 className="text-xl font-semibold text-foreground mb-6">Community Channels</h3>
+          <div className="grid md:grid-cols-3 gap-6">
             <div className="flex items-center justify-center space-x-4 p-6 rounded-2xl bg-card border border-border">
-              <div className="w-10 h-10 rounded-full bg-blue-600/20 flex items-center justify-center">
-                <span className="text-lg">📧</span>
+              <div className="w-10 h-10 rounded-full bg-purple-600/20 flex items-center justify-center">
+                <span className="text-lg">💬</span>
               </div>
               <div className="text-left">
-                <h3 className="font-semibold text-foreground">Email</h3>
+                <h4 className="font-semibold text-foreground">Discord</h4>
                 <a
-                  href="mailto:hello@catalyst.com"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  href="#"
+                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                 >
-                  hello@catalyst.com
+                  Join study groups
+                </a>
+              </div>
+            </div>
+            <div className="flex items-center justify-center space-x-4 p-6 rounded-2xl bg-card border border-border">
+              <div className="w-10 h-10 rounded-full bg-blue-600/20 flex items-center justify-center">
+                <span className="text-lg">📱</span>
+              </div>
+              <div className="text-left">
+                <h4 className="font-semibold text-foreground">Telegram</h4>
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+                >
+                  Daily discussions
                 </a>
               </div>
             </div>
             <div className="flex items-center justify-center space-x-4 p-6 rounded-2xl bg-card border border-border">
               <div className="w-10 h-10 rounded-full bg-green-600/20 flex items-center justify-center">
-                <span className="text-lg">💬</span>
+                <span className="text-lg">📧</span>
               </div>
               <div className="text-left">
-                <h3 className="font-semibold text-foreground">Discord</h3>
+                <h4 className="font-semibold text-foreground">General</h4>
                 <a
-                  href="#"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  href="mailto:community@catalyst.com"
+                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                 >
-                  Join our community server
-                </a>
-              </div>
-            </div>
-            <div className="flex items-center justify-center space-x-4 p-6 rounded-2xl bg-card border border-border">
-              <div className="w-10 h-10 rounded-full bg-purple-600/20 flex items-center justify-center">
-                <span className="text-lg">🐦</span>
-              </div>
-              <div className="text-left">
-                <h3 className="font-semibold text-foreground">Twitter</h3>
-                <a
-                  href="#"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  @catalyst_community
+                  community@catalyst.com
                 </a>
               </div>
             </div>
